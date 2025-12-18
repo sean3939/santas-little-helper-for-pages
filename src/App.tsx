@@ -149,7 +149,7 @@ const App: React.FC = () => {
           
           <button 
             onClick={handleExportClick}
-            className="text-xs bg-slate-800 hover:bg-slate-700 text-santa-gold px-3 py-1 rounded border border-santa-gold/30 transition-colors"
+            className="hidden text-xs bg-slate-800 hover:bg-slate-700 text-santa-gold px-3 py-1 rounded border border-santa-gold/30 transition-colors"
           >
             🎁 Steal Sleigh
           </button>
