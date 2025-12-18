@@ -19,9 +19,9 @@ const InputForm: React.FC<InputFormProps> = ({ onScan, disabled }) => {
 
   const getPlaceholder = () => {
     switch (mode) {
-      case 'news': return 'Enter a Name (e.g., "Sam Altman"), + context if necessary...';
+      case 'news': return 'Enter a name (or social profile), or be really specific with the context...';
       case 'wiki': return 'Paste Wikipedia URL here (e.g., https://en.wikipedia.org/wiki/Santa_Claus)';
-      case 'github': return 'GitHub Username (e.g., nearform)';
+      case 'github': return 'GitHub Username (e.g., google)';
       case 'reddit': return 'Reddit Username (e.g., spez)';
       default: return '';
     }
@@ -33,7 +33,7 @@ const InputForm: React.FC<InputFormProps> = ({ onScan, disabled }) => {
       {/* Tabs */}
       <div className="grid grid-cols-4 gap-2 mb-6">
         {[
-          { id: 'news', label: '📰 In the News', type: 'news' },
+          { id: 'news', label: '📰 Newsworthy', type: 'news' },
           { id: 'wiki', label: '📜 Wiki Legacy', type: 'wiki' },
           { id: 'github', label: '💻 Code-based', type: 'github' },
           { id: 'reddit', label: '👽 Karma', type: 'reddit' },
@@ -55,7 +55,7 @@ const InputForm: React.FC<InputFormProps> = ({ onScan, disabled }) => {
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="space-y-2">
           <label className="block text-santa-gold font-santa text-xl capitalize">
-            {mode === 'news' ? 'Anything newsworthy?' : 
+            {mode === 'news' ? 'Anyone in the public eye? Popular on social media?' : 
              mode === 'wiki' ? 'Wikipedia Record' :
              mode === 'github' ? 'GitHub Profile' : 'Redditor Profile'}
           </label>
