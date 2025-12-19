@@ -1,8 +1,6 @@
 # Santa's Little Helper (The Santa Scanner)
 
-**Congratulations! You've successfully stolen the sleigh.** 🛷💨
-
-You are now the proud owner of the source code for the North Pole's most advanced judgment algorithm. This application uses Google's latest **Gemini 2.5** models to analyze social media footprints, judge souls, and visualize their rewards (or punishments) in real-time.
+This is the version used to hose on Github pages. Minor tweaks needed to get it up and running.
 
 ## 🎄 How It Works
 
@@ -29,37 +27,18 @@ This is a **Serverless Client-Side Application** built with React, Vite, and the
 ## 🛠️ Setup & Usage
 
 ### Prerequisites
--   Node.js (v18+)
--   A Google Cloud Project with the **Gemini API** enabled.
 -   An API Key from [Google AI Studio](https://aistudiocdn.com/app/apikey).
 
-### Installation
-1.  **Install Dependencies**:
-    ```bash
-    npm install
-    ```
-2.  **Configure Environment**:
-    Create a `.env` file in the root directory:
-    ```env
-    API_KEY=your_actual_api_key_here
-    ```
-3.  **Launch the Sleigh**:
-    ```bash
-    npm run dev
-    ```
 
-## 🎮 How to Use the Scanner
 
--   **In The News**: Type the name of any public figure (e.g., "Sam Altman", "Taylor Swift"). The AI will search 2025 records to judge their recent behavior.
+
+## 🎮 How to Use the Helper
+
+-   **Newsworthy**: Type the name of any public figure (e.g., "Sam Altman", "Taylor Swift") or get real specific if you want to try to locate someone less well-known. The AI will search 2025 records to judge their recent behavior.
 -   **Wiki Legacy**: Paste a full Wikipedia URL. Great for judging historical figures or fictional characters.
 -   **Code-Based (GitHub)**: Enter a GitHub username. Santa judges you based on your commit messages, push times (3 AM commits = Naughty), and lack of documentation.
--   **Karma (Reddit)**: Enter a Reddit username. Santa analyzes your comments and posts to see if you are a troll or a helper.
-
-## 🎨 Customization
-
--   **Change Santa's Personality**: Edit `SANTA_SYSTEM_INSTRUCTION` in `src/services/geminiService.ts`. You can make him meaner, nicer, or speak in Shakespearean English.
--   **Modify Visuals**: The app uses Tailwind CSS. Check `tailwind.config.js` (injected in `index.html`) for the custom "Santa" color palette.
+-   **Karma (Reddit)**: Enter a Reddit username. Santa analyzes your comments and posts to see if you are a troll or a helper. (Github pages version uses a Google grounding search to get an overview of the account given Reddit CORS restrictions)
 
 ---
 
-*Built for the Gemini 2.5 Hackathon. Use this technology responsibly—only Santa has the final say.* 🎅✨
+*Use this technology responsibly—only Santa has the final say.* 🎅✨
